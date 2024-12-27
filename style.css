@@ -1,16 +1,38 @@
 * {
-  font-family: 'Poppins';
-
+  font-family: 'VT323', monospace;
 }
 
+/* Show scrollbar */
 html::-webkit-scrollbar {
-  display: none;
+  width: 18px; /* Adjust width of the scrollbar */
+  height: 5px; /* Adjust height of the scrollbar for horizontal scrolling */
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-html {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round corners for the thumb */
 }
+
+html::-webkit-scrollbar-track {
+  background-color: #110e0e; /* Background color of the track */
+}
+
+html {
+  -ms-overflow-style: auto; /* IE and Edge */
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* Apply gradient to text inside the span */
+.gradient-text {
+  background: linear-gradient(to right, #5B8FFF, #72A4FF, #5BD8FF);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hover\:blue-gradient-hover:hover {
+  background: linear-gradient(90deg, #4e79a7, #1d4e89);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
